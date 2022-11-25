@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing page</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+  <div class="navbar">
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#contact-links">Links</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+          <li class="current"><a href="#">HomePage</a></li>
+        </ul>
+      </nav>
+      <div class="button-mode">
+        <button id="button" class="button">
+          <i class="fas fa-moon" id="icon"></i>
+        </button>
+        <script>
+          const button = document.getElementById("button")
+          const icon = document.getElementById("icon")
+
+          button.onclick = function (){
+            document.body.classList.toggle("dark-mode")
+            if(document.body.classList.contains("dark-mode")) {
+              icon.className = "fas fa-sun"
+            } else {
+              icon.className ="fas fa-moon"
+            }
+          }
+        </script>
+      </div>
+    </div>
+  </div>
+
+  <section class="hero">
+    <div class="container">
+      <div class="left-col-hero">
+        <h1 class="AboutMe">
+          About Me
+        </h1>
+        <div class="div-p">
+          <p>
+            I am Ahmad Taufiq Nur Rohman, but people calls me Afiq. I was born in Majalengka, 2nd of June 2003. I am a 19 years old student of bachelor degree of Informatics at Telkom University. I have curiosity on technology especually the things behind it. Thats why I push my self to the infinite limit learning something I interested with. I have learned basic of some  programming language (i.e. python, C++, Java Script and little bit of Go). That also the reason why I want to develop the skills that I already have.
+            <br><br>By the way... It is my first personal website. This website created for fortpolio purposes.
+          </p>
+        </div>
+      </div>
+      <div class="right-col-hero">
+        <img class="dot-graph" src="/images/dot-seamless-pattern.svg" alt="dot design">
+      </div>
+    </div>
+  </section>
+
+  <section class="sub-hero">
+    <div class="container">
+      <div class="left-col">
+        <img class="dot-graph" src="/images/dot-seamless-pattern.svg" alt="dot design">
+      </div>
+      <div class="right-col">
+        <h1 class="education">
+          Education
+        </h1>
+        <p>
+          <ul class="education">
+            <li>SDN Cibogor 2</li>
+            <li>SMPN 3 Ligung</li>
+            <li>SMAN 1 Majalengka (Science Major)</li>
+            <li>Telkom University (Bachelor degree of Informatics)</li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact-section" class="contact-section">
+    <div class="container">
+      <h1 class="contact-h1">Contact</h1>
+      <div class="email-contact">afiq20030602@gmail.com</div>
+      <div class="wa-contact">081320294694</div>
+    </div>
+  </section>
+
+  <section id="contact-links" class="links">
+    <div class="container">
+      <div class="links-instagram"><a href="https://www.instagram.com/ahmad.taufiq_6/"><i class="fa-brands fa-instagram"></i></a></div>
+      <div class="links-fb"><a href="https://www.facebook.com/afiq.nurrohman.6/"><i class="fa-brands fa-facebook"></i></a></div>
+      <div class="links-linkedin"><a href="https://www.linkedin.com/in/ahmad-taufiq-nur-rohman-aaa3b91a6/"><i class="fa-brands fa-linkedin"></i></a></div>
+      <div class="links-github"><a href="https://github.com/AfiqN"><i class="fa-brands fa-github"></i></a></div>
+    </div>
+  </section>
+</body>
+</html>
