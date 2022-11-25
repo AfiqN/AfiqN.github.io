@@ -41,6 +41,10 @@ ul {
   border-style: groove;
   border-radius: 0.7em;
 }
+.navbar ul li:hover {
+  transform: scale(1.2);
+  transition: 0.1s;
+}
 .navbar li {
   float: left;
   margin-left: auto;
@@ -180,4 +184,8 @@ ul {
   place-content: center;
   padding: 1em;
   font-size: 3em;
+}
+.links a:hover {
+  transform: scale(1.5);
+  transition: 0.1s;
 }/*# sourceMappingURL=main.css.map */
